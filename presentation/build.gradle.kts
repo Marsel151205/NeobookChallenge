@@ -8,6 +8,9 @@ plugins {
 
     // Kapt
     kotlin(Plugins.kapt)
+
+    // Hilt
+    id(Plugins.hilt)
 }
 
 android {
@@ -31,8 +34,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
         jvmTarget = Config.targetJvm
@@ -86,4 +89,14 @@ dependencies {
     // Navigation Component
     implementation(Dependencies.NavigationComponent.navigationUI)
     implementation(Dependencies.NavigationComponent.navigationFragment)
+
+    // Hilt
+    implementation(Dependencies.Hilt.hilt)
+    kapt(Dependencies.Hilt.hiltCompiler)
+
+    // Domain
+    implementation(project(":domain"))
+}
+kapt {
+    correctErrorTypes = true
 }
