@@ -20,6 +20,7 @@ object Version {
     const val viewBindingPropertyDelegate = "1.5.9"
     const val lifecycle = "2.6.2"
     const val loggingInterceptor = "4.11.0"
+    const val room = "2.6.1"
 }
 
 object Plugins {
@@ -104,5 +105,10 @@ object Dependencies {
     object Interceptors {
         const val loggingInterceptor =
             "com.squareup.okhttp3:logging-interceptor:${Version.loggingInterceptor}"
+    }
+
+    object Room {
+        const val roomRuntime = "androidx.room:room-runtime:${Version.room}"
+        const val roomCompiler = "androidx.room:room-compiler:${Version.room}"
     }
 }
