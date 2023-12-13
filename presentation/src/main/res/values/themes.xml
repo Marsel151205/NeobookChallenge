@@ -6,4 +6,10 @@
     </style>
 
     <style name="Theme.NeobookChallenge" parent="Base.Theme.NeobookChallenge" />
+
+    <style name="BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+
+        <item name="itemBackground">@drawable/background_bottom_nav</item>
+        <item name="elevation">0dp</item>
+    </style>
 </resources>
