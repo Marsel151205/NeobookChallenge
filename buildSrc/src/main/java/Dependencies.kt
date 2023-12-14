@@ -21,6 +21,7 @@ object Version {
     const val lifecycle = "2.6.2"
     const val loggingInterceptor = "4.11.0"
     const val room = "2.6.1"
+    const val coroutinesCoreJvm = "1.6.4"
 }
 
 object Plugins {
@@ -89,6 +90,11 @@ object Dependencies {
     object Coroutines {
         const val coroutines =
             "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Version.coroutines}"
+
+        const val coroutineCore =
+            "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Version.coroutines}"
+        const val coroutineCoreJVM =
+            "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:${Version.coroutinesCoreJvm}"
     }
 
     object ViewBinding {
