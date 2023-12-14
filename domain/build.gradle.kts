@@ -13,6 +13,10 @@ java {
 
 dependencies {
 
+    implementation("javax.inject:javax.inject:1")
+
     // Coroutines
-    api(Dependencies.Coroutines.coroutines)
+    implementation(Dependencies.Coroutines.coroutines)
+    implementation(Dependencies.Coroutines.coroutineCore)
+    implementation(Dependencies.Coroutines.coroutineCoreJVM)
 }
