@@ -64,6 +64,18 @@ dependencies {
     // Room
     implementation(Dependencies.Room.roomRuntime)
     kapt(Dependencies.Room.roomCompiler)
+
+    // Gson
+    implementation(Dependencies.Gson.gson)
+
+    // Retrofit
+    implementation(Dependencies.Retrofit.retrofit)
+
+    // OkHttp
+    implementation(Dependencies.OkHttp.okHttp)
+
+    // Logging Interceptor
+    implementation(Dependencies.Interceptors.loggingInterceptor)
 }
 kapt{
     correctErrorTypes = true
