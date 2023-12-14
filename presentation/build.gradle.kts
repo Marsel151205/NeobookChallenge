@@ -96,6 +96,8 @@ dependencies {
 
     // Domain
     implementation(project(":domain"))
+
+    implementation("androidx.cardview:cardview:1.0.0")
 }
 kapt {
     correctErrorTypes = true
